@@ -1,4 +1,6 @@
-const postResolver = {
+import { Resolvers } from './types'
+
+const postResolver: Resolvers = {
   Query: {
     posts: async (_: any, __: any, { dataSources }) => {
       return dataSources.postAPI.getPosts()
