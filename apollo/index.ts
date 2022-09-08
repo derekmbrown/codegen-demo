@@ -1,9 +1,9 @@
 import { ApolloServer } from 'apollo-server'
 import { makeExecutableSchema } from '@graphql-tools/schema'
 
-import { types } from './types'
-import { resolvers } from './resolvers'
-import { datasources } from './datasources'
+import { types } from './graphql-types'
+import { resolvers } from './graphql-resolvers'
+import { datasources } from './graphql-datasources'
 
 const schema = makeExecutableSchema({
   typeDefs: types,
