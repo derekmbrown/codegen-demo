@@ -1,4 +1,4 @@
-import { Resolvers } from './types'
+import { Resolvers } from './generated/graphql-backend'
 
 const postResolver: Resolvers = {
   Query: {

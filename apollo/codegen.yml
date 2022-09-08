@@ -1,6 +1,12 @@
 schema: 'http://localhost:4000/'
+documents: './graphql/**/*.graphql'
 generates:
-  types.ts:
+  generated/graphql-backend.ts:
     plugins:
       - "@graphql-codegen/typescript"
       - "@graphql-codegen/typescript-resolvers"
+  generated/graphql-frontend.ts:
+    plugins:
+      - "@graphql-codegen/typescript"
+      - "@graphql-codegen/typescript-operations"
+      - "@graphql-codegen/typescript-react-apollo"
