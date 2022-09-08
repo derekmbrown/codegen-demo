@@ -7,8 +7,7 @@ const postResolver: Resolvers = {
     },
     post: async (_, { id }, { dataSources }) => {
       return dataSources.postAPI.getPost(id)
-    },
-    
+    }
   }
 }
 
