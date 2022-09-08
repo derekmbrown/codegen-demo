@@ -1,4 +1,4 @@
-export const postResolver = {
+const postResolver = {
   Query: {
     posts: async (_: any, __: any, { dataSources }) => {
       return dataSources.postAPI.getPosts()
@@ -9,3 +9,7 @@ export const postResolver = {
     
   }
 }
+
+export const resolvers = [
+  postResolver
+]

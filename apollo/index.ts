@@ -1,20 +1,20 @@
 import { ApolloServer } from 'apollo-server'
 import { makeExecutableSchema } from '@graphql-tools/schema'
 
-import { postType } from './post-type'
-import { postResolver } from './post-resolver'
-import { postDatasource } from './post-datasource'
+import { types } from './types'
+import { resolvers } from './resolvers'
+import { datasources } from './datasources'
 
 const schema = makeExecutableSchema({
-  typeDefs: postType,
-  resolvers: postResolver
+  typeDefs: types,
+  resolvers: resolvers
 })
 
 const server = new ApolloServer({ 
   schema,
   dataSources: () => {
     return {
-      postAPI: new postDatasource.PostAPI(),
+      postAPI: new datasources.PostAPI(),
     }
   }
 })

@@ -15,6 +15,6 @@ class PostAPI extends RESTDataSource {
   }
 }
 
-export const postDatasource = {
+export const datasources = {
   PostAPI
 }
