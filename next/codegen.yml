@@ -1,3 +1,5 @@
+# Frontend (Next) Codegen File
+
 schema: 'http://localhost:4000/'
 documents: './graphql/**/*.graphql'
 generates:
