@@ -5,6 +5,6 @@ documents: './graphql/**/*.graphql'
 generates:
   generated/graphql-frontend.ts:
     plugins:
-      - "@graphql-codegen/typescript"
-      - "@graphql-codegen/typescript-operations"
-      - "@graphql-codegen/typescript-react-apollo"
+      - '@graphql-codegen/typescript'
+      - '@graphql-codegen/typescript-operations'
+      - '@graphql-codegen/typescript-react-apollo'
