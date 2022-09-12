@@ -1,6 +1,6 @@
+import { Resolvers } from '../generated/graphql-backend'
 
-
-const postResolver = {
+const postResolver: Resolvers = {
   Query: {
     posts: async (_: any, __: any, { dataSources }) => {
       return dataSources.postAPI.getPosts()
